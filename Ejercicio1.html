@@ -3,27 +3,30 @@
 <head>
     <title>Captura de datos</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/basic.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/ejercicio.css" />
     <script src="js/funciones.js"></script>
 </head>
 <body>
-    <form>
-        <input type="text" name="nomest" id="nomest" placeholder="Digite Nombre" size="35">
-        <input type="text" name="nomest" id="apell" placeholder="Digite Apellido" size="35">
-        <input type="text" name="nomest" id="pais" placeholder="Digite Pais de nacimiento" size="35">
-        <input type="text" name="nomest" id="email" placeholder="Digite su email" size="35">
-        <br>
-        <input type="text" name="nomest" id="genero" placeholder="Digite su genero" size="35">
-        <input type="text" name="nomest" id="nacimiento" placeholder="Digite su fecha de nacimiento" size="35">
-        <input type="text" name="nomest" id="paisres" placeholder="Digite su pais de residencia" size="35">
-        <input type="text" name="nomest" id="depares" placeholder="Digite su departamento de residencia" size="35">
-        <br>
-        <input type="number" name="nomest" id="telcasa" placeholder="Digite su telefono de casa" size="35">
-        <input type="number" name="nomest" id="telcelular" placeholder="Digite su telefono de celular " size="35">
-        <input type="text" name="nomest" id="domicilio" placeholder="Digite su domicilio" size="35">
-
-        <button type="button" onclick="captura()">Capturar</button>  
-    </form>
+    <section>
+        <div class="contenedor">
+            <form name="registro" class="formulario">
+                <input type="text" name="nombre" id="nomest" placeholder="Digite Nombre" size="35" class="informacion">
+                <input type="text" name="apellido" id="apell" placeholder="Digite Apellido" size="35" class="informacion">
+                <input type="text" name="procedencia" id="pais" placeholder="Digite Pais de nacimiento" size="35" class="informacion">
+                <input type="email" name="email" id="email" placeholder="Digite su email" size="35" class="informacion">
+                <br>
+                <input type="text" name="genero" id="genero" placeholder="Digite su genero" size="35" class="informacion">
+                <input type="text" name="fecha" id="nacimiento" placeholder="Digite su fecha de nacimiento" size="35" class="informacion">
+                <input type="text" name="paises" id="paisres" placeholder="Digite su pais de residencia" size="35" class="informacion">
+                <input type="text" name="departamentos" id="depares" placeholder="Digite su departamento de residencia" size="35" class="informacion">
+                <br>
+                <input type="number" name="telefono-casa" id="telcasa" placeholder="Digite su telefono de casa" size="35" class="informacion">
+                <input type="number" name="telefono" id="telcelular" placeholder="Digite su telefono de celular " size="35" class="informacion">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Digite su domicilio" size="35" class="informacion">
+        
+                <button type="submit" onclick="captura()">Capturar</button>  
+            </form>
+        </div>        
+    </section>    
 </body>
 </html>
